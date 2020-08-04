@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: SweepstakesProject.ISweepstakeManager
+  commentId: T:SweepstakesProject.ISweepstakeManager
+  id: ISweepstakeManager
+  parent: SweepstakesProject
+  children:
+  - SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  - SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  - SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  langs:
+  - csharp
+  - vb
+  name: ISweepstakeManager
+  nameWithType: ISweepstakeManager
+  fullName: SweepstakesProject.ISweepstakeManager
+  type: Interface
+  source:
+    remote:
+      path: SweepstakesProject/ISweepstakeManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: ISweepstakeManager
+    path: ../ISweepstakeManager.cs
+    startLine: 5
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nInterface defining the basic methods all Sweepstakes Managers should implement. Allows for Marketing Firms to recieve any Sweepstakes Manager implementing this interface.\n"
+  example: []
+  syntax:
+    content: public interface ISweepstakeManager
+    content.vb: Public Interface ISweepstakeManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  commentId: M:SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  id: InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  parent: SweepstakesProject.ISweepstakeManager
+  langs:
+  - csharp
+  - vb
+  name: InsertSweepstakes(Sweepstakes)
+  nameWithType: ISweepstakeManager.InsertSweepstakes(Sweepstakes)
+  fullName: SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  type: Method
+  source:
+    remote:
+      path: SweepstakesProject/ISweepstakeManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: InsertSweepstakes
+    path: ../ISweepstakeManager.cs
+    startLine: 11
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nInserts a Sweepstakes into the Sweepstakes Manager class implemeting ISweepstakesManager.\n"
+  example: []
+  syntax:
+    content: void InsertSweepstakes(Sweepstakes sweepstakes)
+    parameters:
+    - id: sweepstakes
+      type: SweepstakesProject.Sweepstakes
+      description: Sweepstakes to Insert into Collection of Sweepstakes.
+    content.vb: Sub InsertSweepstakes(sweepstakes As Sweepstakes)
+  overload: SweepstakesProject.ISweepstakeManager.InsertSweepstakes*
+- uid: SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  commentId: M:SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  id: GetSweepstakes
+  parent: SweepstakesProject.ISweepstakeManager
+  langs:
+  - csharp
+  - vb
+  name: GetSweepstakes()
+  nameWithType: ISweepstakeManager.GetSweepstakes()
+  fullName: SweepstakesProject.ISweepstakeManager.GetSweepstakes()
+  type: Method
+  source:
+    remote:
+      path: SweepstakesProject/ISweepstakeManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: GetSweepstakes
+    path: ../ISweepstakeManager.cs
+    startLine: 17
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nMethod to return the current sweepstakes from a SweepstakesManager.\n"
+  example: []
+  syntax:
+    content: Sweepstakes GetSweepstakes()
+    return:
+      type: SweepstakesProject.Sweepstakes
+      description: Current Sweepstakes
+    content.vb: Function GetSweepstakes As Sweepstakes
+  overload: SweepstakesProject.ISweepstakeManager.GetSweepstakes*
+- uid: SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  commentId: M:SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  id: EndSweepstakes
+  parent: SweepstakesProject.ISweepstakeManager
+  langs:
+  - csharp
+  - vb
+  name: EndSweepstakes()
+  nameWithType: ISweepstakeManager.EndSweepstakes()
+  fullName: SweepstakesProject.ISweepstakeManager.EndSweepstakes()
+  type: Method
+  source:
+    remote:
+      path: SweepstakesProject/ISweepstakeManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: EndSweepstakes
+    path: ../ISweepstakeManager.cs
+    startLine: 21
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nMethod to end a sweepstakes. Removes Sweepstakes from SweepstakesManager Collection and calls methods needed to complete a sweepstakes.\n"
+  example: []
+  syntax:
+    content: Contestant EndSweepstakes()
+    return:
+      type: SweepstakesProject.Contestant
+    content.vb: Function EndSweepstakes As Contestant
+  overload: SweepstakesProject.ISweepstakeManager.EndSweepstakes*
+references:
+- uid: SweepstakesProject
+  commentId: N:SweepstakesProject
+  name: SweepstakesProject
+  nameWithType: SweepstakesProject
+  fullName: SweepstakesProject
+- uid: SweepstakesProject.ISweepstakeManager.InsertSweepstakes*
+  commentId: Overload:SweepstakesProject.ISweepstakeManager.InsertSweepstakes
+  name: InsertSweepstakes
+  nameWithType: ISweepstakeManager.InsertSweepstakes
+  fullName: SweepstakesProject.ISweepstakeManager.InsertSweepstakes
+- uid: SweepstakesProject.Sweepstakes
+  commentId: T:SweepstakesProject.Sweepstakes
+  parent: SweepstakesProject
+  name: Sweepstakes
+  nameWithType: Sweepstakes
+  fullName: SweepstakesProject.Sweepstakes
+- uid: SweepstakesProject.ISweepstakeManager.GetSweepstakes*
+  commentId: Overload:SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  name: GetSweepstakes
+  nameWithType: ISweepstakeManager.GetSweepstakes
+  fullName: SweepstakesProject.ISweepstakeManager.GetSweepstakes
+- uid: SweepstakesProject.ISweepstakeManager.EndSweepstakes*
+  commentId: Overload:SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  name: EndSweepstakes
+  nameWithType: ISweepstakeManager.EndSweepstakes
+  fullName: SweepstakesProject.ISweepstakeManager.EndSweepstakes
+- uid: SweepstakesProject.Contestant
+  commentId: T:SweepstakesProject.Contestant
+  parent: SweepstakesProject
+  name: Contestant
+  nameWithType: Contestant
+  fullName: SweepstakesProject.Contestant

@@ -1,0 +1,633 @@
+### YamlMime:ManagedReference
+items:
+- uid: SweepstakesProject.SweepstakesQueueManager
+  commentId: T:SweepstakesProject.SweepstakesQueueManager
+  id: SweepstakesQueueManager
+  parent: SweepstakesProject
+  children:
+  - SweepstakesProject.SweepstakesQueueManager.#ctor
+  - SweepstakesProject.SweepstakesQueueManager.EndSweepstakes
+  - SweepstakesProject.SweepstakesQueueManager.GetSweepstakes
+  - SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  langs:
+  - csharp
+  - vb
+  name: SweepstakesQueueManager
+  nameWithType: SweepstakesQueueManager
+  fullName: SweepstakesProject.SweepstakesQueueManager
+  type: Class
+  source:
+    remote:
+      path: SweepstakesProject/SweepstakesQueueManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: SweepstakesQueueManager
+    path: ../SweepstakesQueueManager.cs
+    startLine: 5
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SweepstakesQueueManager : ISweepstakeManager
+    content.vb: >-
+      <Serializable>
+
+      Public Class SweepstakesQueueManager
+
+          Implements ISweepstakeManager
+  inheritance:
+  - System.Object
+  implements:
+  - SweepstakesProject.ISweepstakeManager
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SweepstakesProject.SweepstakesQueueManager.#ctor
+  commentId: M:SweepstakesProject.SweepstakesQueueManager.#ctor
+  id: '#ctor'
+  parent: SweepstakesProject.SweepstakesQueueManager
+  langs:
+  - csharp
+  - vb
+  name: SweepstakesQueueManager()
+  nameWithType: SweepstakesQueueManager.SweepstakesQueueManager()
+  fullName: SweepstakesProject.SweepstakesQueueManager.SweepstakesQueueManager()
+  type: Constructor
+  source:
+    remote:
+      path: SweepstakesProject/SweepstakesQueueManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: .ctor
+    path: ../SweepstakesQueueManager.cs
+    startLine: 13
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nConstructs a new Sweepstakes Manager with an underlying data structure of \n"
+  example: []
+  syntax:
+    content: public SweepstakesQueueManager()
+    content.vb: Public Sub New
+  overload: SweepstakesProject.SweepstakesQueueManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  commentId: M:SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  id: InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  parent: SweepstakesProject.SweepstakesQueueManager
+  langs:
+  - csharp
+  - vb
+  name: InsertSweepstakes(Sweepstakes)
+  nameWithType: SweepstakesQueueManager.InsertSweepstakes(Sweepstakes)
+  fullName: SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  type: Method
+  source:
+    remote:
+      path: SweepstakesProject/SweepstakesQueueManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: InsertSweepstakes
+    path: ../SweepstakesQueueManager.cs
+    startLine: 22
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nInserts a new Sweepstakes at the back of the Queue.\n"
+  example: []
+  syntax:
+    content: public void InsertSweepstakes(Sweepstakes sweepstakes)
+    parameters:
+    - id: sweepstakes
+      type: SweepstakesProject.Sweepstakes
+      description: Sweepstakes to add to campaign.
+    content.vb: Public Sub InsertSweepstakes(sweepstakes As Sweepstakes)
+  overload: SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes*
+  implements:
+  - SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SweepstakesProject.SweepstakesQueueManager.GetSweepstakes
+  commentId: M:SweepstakesProject.SweepstakesQueueManager.GetSweepstakes
+  id: GetSweepstakes
+  parent: SweepstakesProject.SweepstakesQueueManager
+  langs:
+  - csharp
+  - vb
+  name: GetSweepstakes()
+  nameWithType: SweepstakesQueueManager.GetSweepstakes()
+  fullName: SweepstakesProject.SweepstakesQueueManager.GetSweepstakes()
+  type: Method
+  source:
+    remote:
+      path: SweepstakesProject/SweepstakesQueueManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: GetSweepstakes
+    path: ../SweepstakesQueueManager.cs
+    startLine: 30
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nReturns the current sweepstakes (at front of Queue.) Does not remove from Queue.\n"
+  example: []
+  syntax:
+    content: public Sweepstakes GetSweepstakes()
+    return:
+      type: SweepstakesProject.Sweepstakes
+      description: Current <xref href="SweepstakesProject.Sweepstakes" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetSweepstakes As Sweepstakes
+  overload: SweepstakesProject.SweepstakesQueueManager.GetSweepstakes*
+  implements:
+  - SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SweepstakesProject.SweepstakesQueueManager.EndSweepstakes
+  commentId: M:SweepstakesProject.SweepstakesQueueManager.EndSweepstakes
+  id: EndSweepstakes
+  parent: SweepstakesProject.SweepstakesQueueManager
+  langs:
+  - csharp
+  - vb
+  name: EndSweepstakes()
+  nameWithType: SweepstakesQueueManager.EndSweepstakes()
+  fullName: SweepstakesProject.SweepstakesQueueManager.EndSweepstakes()
+  type: Method
+  source:
+    remote:
+      path: SweepstakesProject/SweepstakesQueueManager.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: EndSweepstakes
+    path: ../SweepstakesQueueManager.cs
+    startLine: 37
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nEnds the current sweepstakes and removes from Queue. Returns winner of the Sweepstakes.\n"
+  example: []
+  syntax:
+    content: public Contestant EndSweepstakes()
+    return:
+      type: SweepstakesProject.Contestant
+    content.vb: Public Function EndSweepstakes As Contestant
+  overload: SweepstakesProject.SweepstakesQueueManager.EndSweepstakes*
+  implements:
+  - SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SweepstakesProject
+  commentId: N:SweepstakesProject
+  name: SweepstakesProject
+  nameWithType: SweepstakesProject
+  fullName: SweepstakesProject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SweepstakesProject.ISweepstakeManager
+  commentId: T:SweepstakesProject.ISweepstakeManager
+  parent: SweepstakesProject
+  name: ISweepstakeManager
+  nameWithType: ISweepstakeManager
+  fullName: SweepstakesProject.ISweepstakeManager
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SweepstakesProject.SweepstakesQueueManager.#ctor*
+  commentId: Overload:SweepstakesProject.SweepstakesQueueManager.#ctor
+  name: SweepstakesQueueManager
+  nameWithType: SweepstakesQueueManager.SweepstakesQueueManager
+  fullName: SweepstakesProject.SweepstakesQueueManager.SweepstakesQueueManager
+- uid: SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes*
+  commentId: Overload:SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes
+  name: InsertSweepstakes
+  nameWithType: SweepstakesQueueManager.InsertSweepstakes
+  fullName: SweepstakesProject.SweepstakesQueueManager.InsertSweepstakes
+- uid: SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  commentId: M:SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  parent: SweepstakesProject.ISweepstakeManager
+  name: InsertSweepstakes(Sweepstakes)
+  nameWithType: ISweepstakeManager.InsertSweepstakes(Sweepstakes)
+  fullName: SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+  spec.csharp:
+  - uid: SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+    name: InsertSweepstakes
+    nameWithType: ISweepstakeManager.InsertSweepstakes
+    fullName: SweepstakesProject.ISweepstakeManager.InsertSweepstakes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SweepstakesProject.Sweepstakes
+    name: Sweepstakes
+    nameWithType: Sweepstakes
+    fullName: SweepstakesProject.Sweepstakes
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SweepstakesProject.ISweepstakeManager.InsertSweepstakes(SweepstakesProject.Sweepstakes)
+    name: InsertSweepstakes
+    nameWithType: ISweepstakeManager.InsertSweepstakes
+    fullName: SweepstakesProject.ISweepstakeManager.InsertSweepstakes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SweepstakesProject.Sweepstakes
+    name: Sweepstakes
+    nameWithType: Sweepstakes
+    fullName: SweepstakesProject.Sweepstakes
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SweepstakesProject.Sweepstakes
+  commentId: T:SweepstakesProject.Sweepstakes
+  parent: SweepstakesProject
+  name: Sweepstakes
+  nameWithType: Sweepstakes
+  fullName: SweepstakesProject.Sweepstakes
+- uid: SweepstakesProject.SweepstakesQueueManager.GetSweepstakes*
+  commentId: Overload:SweepstakesProject.SweepstakesQueueManager.GetSweepstakes
+  name: GetSweepstakes
+  nameWithType: SweepstakesQueueManager.GetSweepstakes
+  fullName: SweepstakesProject.SweepstakesQueueManager.GetSweepstakes
+- uid: SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  commentId: M:SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  parent: SweepstakesProject.ISweepstakeManager
+  name: GetSweepstakes()
+  nameWithType: ISweepstakeManager.GetSweepstakes()
+  fullName: SweepstakesProject.ISweepstakeManager.GetSweepstakes()
+  spec.csharp:
+  - uid: SweepstakesProject.ISweepstakeManager.GetSweepstakes
+    name: GetSweepstakes
+    nameWithType: ISweepstakeManager.GetSweepstakes
+    fullName: SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SweepstakesProject.ISweepstakeManager.GetSweepstakes
+    name: GetSweepstakes
+    nameWithType: ISweepstakeManager.GetSweepstakes
+    fullName: SweepstakesProject.ISweepstakeManager.GetSweepstakes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SweepstakesProject.SweepstakesQueueManager.EndSweepstakes*
+  commentId: Overload:SweepstakesProject.SweepstakesQueueManager.EndSweepstakes
+  name: EndSweepstakes
+  nameWithType: SweepstakesQueueManager.EndSweepstakes
+  fullName: SweepstakesProject.SweepstakesQueueManager.EndSweepstakes
+- uid: SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  commentId: M:SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  parent: SweepstakesProject.ISweepstakeManager
+  name: EndSweepstakes()
+  nameWithType: ISweepstakeManager.EndSweepstakes()
+  fullName: SweepstakesProject.ISweepstakeManager.EndSweepstakes()
+  spec.csharp:
+  - uid: SweepstakesProject.ISweepstakeManager.EndSweepstakes
+    name: EndSweepstakes
+    nameWithType: ISweepstakeManager.EndSweepstakes
+    fullName: SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: SweepstakesProject.ISweepstakeManager.EndSweepstakes
+    name: EndSweepstakes
+    nameWithType: ISweepstakeManager.EndSweepstakes
+    fullName: SweepstakesProject.ISweepstakeManager.EndSweepstakes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SweepstakesProject.Contestant
+  commentId: T:SweepstakesProject.Contestant
+  parent: SweepstakesProject
+  name: Contestant
+  nameWithType: Contestant
+  fullName: SweepstakesProject.Contestant

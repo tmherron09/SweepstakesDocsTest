@@ -1,0 +1,22 @@
+### YamlMime:TableOfContent
+- uid: SweepstakesProject
+  name: SweepstakesProject
+  items:
+  - uid: SweepstakesProject.Contestant
+    name: Contestant
+  - uid: SweepstakesProject.ISweepstakeManager
+    name: ISweepstakeManager
+  - uid: SweepstakesProject.ISweepstakesSubscriber
+    name: ISweepstakesSubscriber
+  - uid: SweepstakesProject.MarketingFirm
+    name: MarketingFirm
+  - uid: SweepstakesProject.Simulation
+    name: Simulation
+  - uid: SweepstakesProject.Sweepstakes
+    name: Sweepstakes
+  - uid: SweepstakesProject.SweepstakesQueueManager
+    name: SweepstakesQueueManager
+  - uid: SweepstakesProject.SweepstakesStackManager
+    name: SweepstakesStackManager
+  - uid: SweepstakesProject.UI
+    name: UI

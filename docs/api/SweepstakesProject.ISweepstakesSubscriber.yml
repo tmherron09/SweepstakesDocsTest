@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: SweepstakesProject.ISweepstakesSubscriber
+  commentId: T:SweepstakesProject.ISweepstakesSubscriber
+  id: ISweepstakesSubscriber
+  parent: SweepstakesProject
+  children:
+  - SweepstakesProject.ISweepstakesSubscriber.Notify(System.String,SweepstakesProject.Contestant)
+  langs:
+  - csharp
+  - vb
+  name: ISweepstakesSubscriber
+  nameWithType: ISweepstakesSubscriber
+  fullName: SweepstakesProject.ISweepstakesSubscriber
+  type: Interface
+  source:
+    remote:
+      path: SweepstakesProject/ISweepstakesSubscriber.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: ISweepstakesSubscriber
+    path: ../ISweepstakesSubscriber.cs
+    startLine: 5
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nInterface defining the Notification method of subscribers to Sweepstakes.\n"
+  example: []
+  syntax:
+    content: public interface ISweepstakesSubscriber
+    content.vb: Public Interface ISweepstakesSubscriber
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: SweepstakesProject.ISweepstakesSubscriber.Notify(System.String,SweepstakesProject.Contestant)
+  commentId: M:SweepstakesProject.ISweepstakesSubscriber.Notify(System.String,SweepstakesProject.Contestant)
+  id: Notify(System.String,SweepstakesProject.Contestant)
+  parent: SweepstakesProject.ISweepstakesSubscriber
+  langs:
+  - csharp
+  - vb
+  name: Notify(String, Contestant)
+  nameWithType: ISweepstakesSubscriber.Notify(String, Contestant)
+  fullName: SweepstakesProject.ISweepstakesSubscriber.Notify(System.String, SweepstakesProject.Contestant)
+  type: Method
+  source:
+    remote:
+      path: SweepstakesProject/ISweepstakesSubscriber.cs
+      branch: master
+      repo: https://github.com/tmherron09/SweepstakeManager.git
+    id: Notify
+    path: ../ISweepstakesSubscriber.cs
+    startLine: 12
+  assemblies:
+  - SweepstakesProject
+  namespace: SweepstakesProject
+  summary: "\nMethod called by Sweepstakes. Usually at the end of a sweepstakes to announce a winner.\n"
+  example: []
+  syntax:
+    content: void Notify(string sweepstakesName, Contestant winner)
+    parameters:
+    - id: sweepstakesName
+      type: System.String
+      description: Name of Sweepstakes Notifying subscriber.
+    - id: winner
+      type: SweepstakesProject.Contestant
+      description: Winning Contestant declared by Sweepstakes.
+    content.vb: Sub Notify(sweepstakesName As String, winner As Contestant)
+  overload: SweepstakesProject.ISweepstakesSubscriber.Notify*
+references:
+- uid: SweepstakesProject
+  commentId: N:SweepstakesProject
+  name: SweepstakesProject
+  nameWithType: SweepstakesProject
+  fullName: SweepstakesProject
+- uid: SweepstakesProject.ISweepstakesSubscriber.Notify*
+  commentId: Overload:SweepstakesProject.ISweepstakesSubscriber.Notify
+  name: Notify
+  nameWithType: ISweepstakesSubscriber.Notify
+  fullName: SweepstakesProject.ISweepstakesSubscriber.Notify
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SweepstakesProject.Contestant
+  commentId: T:SweepstakesProject.Contestant
+  parent: SweepstakesProject
+  name: Contestant
+  nameWithType: Contestant
+  fullName: SweepstakesProject.Contestant
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
